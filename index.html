@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Задание 6</title>
+	<script type="text/javascript" src="vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<button @click="increase">⬆</button>
+		<input type="text" v-model.number="numberOfElements"/>
+		<ul>
+		<list-element :base="2" :exp="n" v-for="n in items"/>
+		</ul>
+	</div>
+
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
